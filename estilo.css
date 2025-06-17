@@ -1,0 +1,139 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #f4f4f4;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
+}
+.navbar {
+    background-color: #0056b3;
+    padding: 10px 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: background-color 0.3s;
+}
+.navbar a:hover {
+    background-color: #004085;
+    border-radius: 5px;
+}
+h1, h2, h3 {
+    color: #0056b3; 
+}
+.form-control {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    transition: box-shadow 0.3s ease;
+}
+.form-control:focus {
+    box-shadow: 0 0 10px rgba(0, 85, 179, 0.4);
+    border-color: #0056b3;
+}
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+.btn:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
+.card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    margin: 15px 0;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.card img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+.carrinho-container {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.carrinho-container h2 {
+    color: #28a745;/
+}
+.carrinho-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+}
+.carrinho-item:last-child {
+    border-bottom: none;
+}
+.carrinho-item img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+.footer a {
+    color: #28a745;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+.footer a:hover {
+    color: #218838;
+}
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+.table th, .table td {
+    padding: 12px 15px;
+    border: 1px solid #ccc;
+}
+.table th {
+    background-color: #0056b3;
+    color: #fff;
+}
+.table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+@media (max-width: 768px) {
+    .navbar a {
+        display: block;
+        text-align: center;
+    }
+    .card {
+        margin: 10px 0;
+    }
+    .carrinho-item {
+        flex-direction: column;
+        text-align: center;
+    }
+}
